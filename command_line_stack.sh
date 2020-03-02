@@ -2,17 +2,6 @@
 #1. If the command-line is not empty, that is backed up and the command-line is made empty.
 #2. If the command-line is empty, the last backed up command-line is restored.
 #Command-lines are pushed into or popped from a command-line stack.
-#
-#Note that, in this script, there are some functions which seems to be redundant.
-#However, for some reason, referring to the variable `READLINE_LINE` other than at the end of the line gives rise to an error or behaves quite strangely.
-#For example,
-# echo ${READLINE_LINE}
-#is okay, but
-# echo "[ ${READLINE_LINE} ]"
-#outputs nothing (even '[' nor ']') and
-# [[ ${READLINE_LINE} == "" ]]
-#gives an error.
-#To overcome this behavior, we use functions.
 
 mapped_key='"\C-b"' #By default, the functionality is mapped to Ctrl+b. Change this line as you like.
 
