@@ -20,7 +20,17 @@ Just <kbd>Ctrl</kbd>+<kbd>b</kbd> to remember/restore command-lines.
 
 <sub>This demo was created with the great software [screenkey](https://gitlab.com/wavexx/screenkey).</sub>
 
+## Installation
+
+Let `<path>` be the path to `command_line_stack.sh`.
+
+To temporarily enable the script, execute `source <path>`. By this, the functionality is enabled only for the current session.
+
+To permanently enable the script, load it from the initialization file. For example, write `source <path>` to your `~/.bashrc`.
+
 ## Usage
 
-Load `command_line_stack.sh` from the initialization file. For example, write `source <path>` to your `~/.bashrc` where `<path>` is the path of `command_line_stack.sh`. There is nothing more than this to do.
+Press <kbd>Ctrl</kbd> + <kbd>b</kbd>. There is nothing more than this to do.
+
+The script is tested under both vi mode (`set -o vi`) and emacs mode (`set -o emacs`).
 
