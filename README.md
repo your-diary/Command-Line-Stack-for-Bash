@@ -20,6 +20,18 @@ Just <kbd>Ctrl</kbd>+<kbd>b</kbd> to remember/restore command-lines.
 
 <sub>This demo was created with the great software [screenkey](https://gitlab.com/wavexx/screenkey).</sub>
 
+## Requirements
+
+A newer version of `bash` is needed. The script is tested under the following environments.
+
+| OS | Machine | `bash` version |
+|:-:|:-:|:-:|
+| Arch Linux | Desktop PC | 5.0.16 |
+| Arch Linux ARM | Raspberry Pi 4 | 5.0.16 |
+| Raspbian Buster | Raspberry Pi 3 | 5.0.3 |
+| FreeBSD | Desktop PC | 5.0.11 |
+| macOS Catalina | MacBook Pro 2015 | 5.0.17 |
+
 ## Installation
 
 Let `<path>` be the path to `command_line_stack.sh`.
