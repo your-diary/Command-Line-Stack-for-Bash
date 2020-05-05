@@ -10,16 +10,16 @@ ____is_debug_mode=0 #Set 1 to turn on debug output.
 declare -a ____command_line_stack
 ____command_line_stack_index=0
 
-____is_argc_zero() {
+function ____is_argc_zero() {
     [[ $# == 0 ]]
 }
 
-____colored_print() {
+function ____colored_print() {
     echo -e "\e[092m$@\e[0m"
     echo
 }
 
-____command_line_stack_main() {
+function ____command_line_stack_main() {
 
     if [[ ${READLINE_LINE} =~ ^\ *$ ]]; then #pop
 
